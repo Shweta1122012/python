@@ -1,11 +1,21 @@
-square_input = int(input("enter a number to find the square and find out if it is even or odd:"))
-def square_(start, end):
-    for i in range(start, end+1):
-        square_num = i**2
-        if square_num%2==0:
-            print("the square of",i,"is",square_num,"and it is even")
-        else:
-            print("the square of",i,"is",square_num,"and it is odd")
-square_(square_input, square_input)
 
+def square_filter(start, end):
+    squares =[]
+    even = []
+    odd = []
+
+    for num in range(start, end+1):
+        sq=num**2
+        squares.append(sq)
+        if sq % 2 == 0:
+            even.append(sq)
+        else:
+            odd.append(sq)
+    print("Squares:", squares)
+    print("Even Squares:", even)
+    print("Odd Squares:", odd)
+start = int(input("Enter the start of range: "))
+end = int(input("Enter the end of range: "))
+square_filter(start, end)
+    
     
