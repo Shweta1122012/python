@@ -46,7 +46,7 @@ al_sprites_list.add(sp1)
 
 colors={
         "purple":pygame.Color('purple'),
-        "pink":pygame.Color('pink'),
+        "blue":pygame.Color('blue'),
         "orange":pygame.Color('orange'),
         "brown":pygame.Color('brown'),
         "white":pygame.Color('white'),
@@ -71,7 +71,7 @@ while not exit:
     y = min(max(0, y), screen_height - sprite_height)
     if x == 0: current_color = colors["purple"]
     elif x == screen_width - sprite_width: current_color = colors["brown"]
-    elif y == 0: current_color = colors["pink"]
+    elif y == 0: current_color = colors["blue"]
     elif y == screen_height - sprite_height: current_color = colors["orange"]
     else: current_color = colors["white"]
     for event in pygame.event.get():

@@ -17,7 +17,7 @@ COLLISION_DISTANCE=27
 
 pygame.init()
 screen=pygame.display.set_mode((SCREEN_WIDTH,SCREEN_HEIGHT))
-pygame.display.set_caption("space invader")
+pygame.display.set_caption("Space Invader")
 icon=pygame.image.load(r"C:\Users\Public\python\lesson37\ufo.png")
 pygame.display.set_icon(icon)
 
