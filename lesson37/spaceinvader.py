@@ -46,6 +46,13 @@ bullety=PLAYER_START_Y
 bulletx_change=0
 bullety_change=BULLET_SPEED_Y
 bullet_state="ready"
+bullet_sound=pygame.mixer.Sound(r"C:\Users\Public\python\after class project\bul.mp3")
+explosion_sound=pygame.mixer.Sound(r"C:\Users\Public\python\after class project\exp.mp3")
+
+
+background_sound=pygame.mixer.Sound(r"C:\Users\Public\python\after class project\background.mp3")
+pygame.mixer.music.load(r"C:\Users\Public\python\after class project\background.mp3")
+pygame.mixer.music.play(-1)
 
 score_value=0
 font=pygame.font.Font("freesansbold.ttf",32)
